@@ -1,0 +1,32 @@
+# LingoCloud: Endangered Voices
+
+An interactive data visualization and generative art piece exploring the fragility and vibrancy of endangered world languages.
+
+## 1. Project Concept & Inspiration
+**LingoCloud: Endangered Voices** is an interactive digital installation driven by linguistic data. Inspired by the **Pangloss Collection** (an open-access archive of endangered languages), this project transforms static records into dynamic "digital nebulae." The goal is to move beyond traditional charts and create a living ecosystem that symbolizes the delicate state of global cultural diversity.
+
+
+
+## 2. Visual Logic & Data Mapping
+The visual attributes of each "cloud" are directly mapped to the scraped linguistic data:
+* **Vitality to Scale**: The size and density of the particle cloud represent the language's **Vitality**. Larger, denser clouds signify languages with more recorded data, while smaller, faint clouds represent those at higher risk.
+* **Identity via Color**: Each language is assigned a unique hue within a **cool violet and lavender-blue** spectrum. This palette was chosen to evoke a sense of deep-sea bioluminescence or cosmic mystery.
+* **Ethereal Texture**: By utilizing multi-layered transparency and a custom **Grain/Noise filter**, the clouds achieve a "frosted glass" or "blurred" aesthetic. This visual uncertainty symbolizes the gradual fading of these voices from human history.
+
+## 3. Interaction Design
+The project emphasizes the role of the observer through two distinct layers:
+* **The Awakening (Button)**: The experience begins with a silent "void." By clicking the **"Discover Language Cloud"** button, the user randomly "awakens" a language from the dataset, mimicking the process of linguistic discovery and documentation.
+* **The Drift (Mouse Interaction)**: The clouds are sensitive to human presence. As the cursor approaches, the particles exhibit a fluid "drift" effect—a mix of attraction and subtle repulsion—representing the delicate balance between observing and preserving indigenous cultures.
+
+## 4. Technical Implementation
+Built with **p5.js**, the project leverages several key creative coding techniques:
+* **Perlin Noise**: Used to drive the organic "breathing" and floating paths of the clouds, ensuring no two movements are identical.
+* **HSB Color Space**: Precise control over color transitions to maintain a high-end, cohesive blue-purple aesthetic without straying into unwanted pink tones.
+* **Real-time Particle System**: Each cloud manages hundreds of individual particles every frame, calculating rotation, flicker, and mouse-response in real-time.
+
+---
+
+### How to Run
+1. Ensure `index.html`, `sketch.js`, `scrape.js`, and `data.json` are in the same folder.
+2. Open `index.html` in a modern web browser (Safari/Chrome/Firefox).
+3. Click the button in the top-left corner to begin the experience.
