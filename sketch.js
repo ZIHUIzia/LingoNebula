@@ -23,7 +23,6 @@ function setup() {
   let rawData = (isDataLoaded && Object.keys(myData).length > 0) ? Object.values(myData) : [];
   dataPool = rawData.concat(backupData);
 
-  // --- 按钮文字已改为纯英文 ---
   btn = createButton('Discover Language Cloud');
   btn.position(30, 30); 
   btn.mousePressed(addCreature); 
@@ -86,7 +85,6 @@ class CreatureCloud {
     this.particles = [];
     this.radius = map(vit, 0, 100, 65, 170);
     
-    // 冷紫与蓝紫调色逻辑
     let coin = random();
     if (coin > 0.5) {
       this.hue = random(265, 290); 
